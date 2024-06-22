@@ -42,7 +42,7 @@ async function run() {
       const cursor = foodCollection.find();
       const result = await cursor.toArray();
       res.send(result);
-      res.send("Foods");
+      // res.send("Foods");
     });
     // read single food
     app.get("/foods/:id", async (req, res) => {
